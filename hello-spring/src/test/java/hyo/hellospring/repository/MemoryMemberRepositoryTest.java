@@ -13,10 +13,7 @@ import static org.assertj.core.api.Assertions.*;
 class MemoryMemberRepositoryTest {
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
-    @AfterEach
-    public void afterEach() {
-        repository.clearStore();
-    }
+
 
     @Test
     public void save() {
