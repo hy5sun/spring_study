@@ -3,14 +3,18 @@ package hyo.hellospring.service;
 import hyo.hellospring.domain.Member;
 import hyo.hellospring.repository.MemberRepository;
 import hyo.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    //@Autowired //서비스와 리포지토리 연결
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
